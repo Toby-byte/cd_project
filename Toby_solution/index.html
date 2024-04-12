@@ -5,36 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css"></style>
     <script src="js/app.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css"></style>
-    <script src="js/app.js" defer></script>
-    <title>Document</title>
+    <title>CD Project</title>
 </head>
 <body>
     <header>
-        <h1 class="poppins-medium">Music CDs</h1>
-        <p class="poppins-regular">With cloneNode()</p>
+        <h1>Music CDs</h1>
     </header>
     <main>
         <form id="frmCD">
             <div>
-                <label class="poppins-regular" for="txtAuthor">Author</label>
+                <label for="txtAuthor">Author</label>
                 <input type="text" class="textInput" id="txtAuthor" required>
             </div>
             <div>
-                <label class="poppins-regular" for="txtTitle">Title</label>
+                <label for="txtTitle">Title</label>
                 <input type="text" class="textInput" id="txtTitle" required>
             </div>
             <div>
-                <label class="poppins-regular" for="txtYear">Year</label>
+                <label for="txtYear">Year</label>
                 <input type="text" id="txtYear" pattern="[0-9]{4}" required>
+            </div>
+            <div>
+                <label for="fileImage">Image</label>
+                <input type="file" class="textInput" id="fileImage" accept="image/png, image/jpeg">
             </div>
             <div>
                 <input type="submit" value="Add">
@@ -44,9 +37,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="poppins-regular">Author</th>
-                        <th class="poppins-regular">Title</th>
-                        <th class="right poppins-regular">Year</th>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Image</th>
                         <th class="right"></th>     <!-- Delete icon -->
                     </tr>
                 </thead>
@@ -54,7 +48,5 @@
             </table>
         </section>
     </main>
-</body>
-</html>
 </body>
 </html>
